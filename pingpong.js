@@ -21,9 +21,18 @@ let MeusPontos = 0;
 let pontosOponentes = 0;
 
 function setup (){
-  CreateCanvas(600, 400);
+  createCanvas(600, 400);
 }
-
 function draw(){
+    
+  }
+function movimentoBolinha(){
+  circle(xBolinha,yBolinha,diametro);
   
-}
+  xBolinha += volicidadeXBolinha;
+  yBolinha += velocidadeYBolinha;
+  if(xBolinha + raio > width || xBolinha-raio < 0){velocidadeXBolinha *= -1;
+  }
+  if(yBolinha + raio > width || yBolinha-raio < 0){
+    velocidadeYBolinha *= -1}}
+
