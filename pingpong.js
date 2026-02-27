@@ -1,4 +1,5 @@
-//criar bolinha
+
+  //criar bolinha
 let raio = 7.5;
 let xBolinha = 100;
 let yBolinha = 200;
@@ -20,11 +21,39 @@ let yOponente = 150;
 let MeusPontos = 0;
 let pontosOponentes = 0;
 
+
+let dificuladade = "Normal";
+let trilha,ponto,raqueatda;
+
+function preload (){
+  trilha = loadSound("trilha.mp3")
+  ponto = loadSound("trilha.mp3")
+  raquetada = loadSound("raquetada.mp3")
+}
+ 
+function setup (){
+  creatCanvas(600,400)
+  trilha.loop()
+}
 function setup (){
   createCanvas(600, 400);
 }
 function draw(){
+  background(0);
+  movimentoBolinha();
+  raquetes(xRaquetes,yRaquete);
+  raquetes(xRaqueteOponente,yRaqueteOponente);
+npc(dificuldade);
+  if(keyIsDown(UP_ARROW)){
+    yRaquete -= 10}
     
+  if(keyIsDown(DOWN_ARROW)){
+    yRAquete += 10}
+  
+  if(xBolinha -raio < xRaquete + 10 &
+    yBolinha -raio < yRaquete + 90 &
+    yBolinha +raio > *= -1;
+    voleciad)
   }
 function movimentoBolinha(){
   circle(xBolinha,yBolinha,diametro);
