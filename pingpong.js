@@ -1,4 +1,7 @@
 
+ 
+
+
   //criar bolinha
 let raio = 7.5;
 let xBolinha = 100;
@@ -51,10 +54,20 @@ npc(dificuldade);
     yRAquete += 10}
   
   if(xBolinha -raio < xRaquete + 10 &
-    yBolinha -raio < yRaquete + 90 &
-    yBolinha +raio > *= -1;
-    voleciad)
-  }
+    yBolinha-raio < yRaquete + 90 &
+     yBolinha +raio > yRaquete){
+    velocidadeXBolinha *= -1;
+    raquetada.play()}
+  if(xBolinha + raio > xRaqueteOponente &
+    yBolinha - raio < yRaqueteOponente + 90 &
+    yBolinha + raio > yRaqueteOponente) {
+    velocidadeXBolinha *= -1;
+    raquetada.play()}
+  
+
+     
+     }
+  
 function movimentoBolinha(){
   circle(xBolinha,yBolinha,diametro);
   
@@ -64,4 +77,5 @@ function movimentoBolinha(){
   }
   if(yBolinha + raio > width || yBolinha-raio < 0){
     velocidadeYBolinha *= -1}}
+
 
